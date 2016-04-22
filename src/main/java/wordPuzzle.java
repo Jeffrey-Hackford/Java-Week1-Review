@@ -22,6 +22,10 @@ public class wordPuzzle {
       results += "-";
     } else if (userWord.equals("i")) {
       results = "-";
+    } else if (userWord.equals("b")) {
+      return results;
+    } else if (userWord.equals("word")) {
+      results = userWord;
     }
     return results;
   }
