@@ -20,6 +20,8 @@ public class wordPuzzle {
 
     if (userWord.equals("a")) {
       results += "-";
+    } else if (userWord.equals("i")) {
+      results = "-";
     }
     return results;
   }
