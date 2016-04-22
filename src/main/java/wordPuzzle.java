@@ -30,10 +30,10 @@ public class wordPuzzle {
     }, new VelocityTemplateEngine());
   }
   public static String makeWordPuzzle(String sentence) {
-    String localWordVariable = sentence;
+    String localWordVariable = sentence.toLowerCase();
     char[] charArray = localWordVariable.toCharArray();
     String results = "";
-    
+
     HashMap<Character, Character> hm = new HashMap<Character, Character>();
     hm.put('a', '-');
     hm.put('b', 'b');
