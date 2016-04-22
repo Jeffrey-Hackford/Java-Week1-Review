@@ -18,9 +18,9 @@ public class wordPuzzleTest {
     wordPuzzle testWordPuzzle = new wordPuzzle();
     assertEquals(" ", testWordPuzzle.makeWordPuzzle("b"));
   }
-  // @Test
-  // public void isWordPuzzleTestWord_makeWordPuzzle_word() {
-  //   wordPuzzle testWordPuzzle = new wordPuzzle();
-  //   assertEquals("w-rd", testWordPuzzle.makeWordPuzzle("word"));
-  // }
+  @Test
+  public void isWordPuzzleTestWord_makeWordPuzzle_word() {
+    wordPuzzle testWordPuzzle = new wordPuzzle();
+    assertEquals("w-rd", testWordPuzzle.makeWordPuzzle("word"));
+  }
 }
