@@ -13,19 +13,36 @@ public class wordPuzzle {
       model.put ("template", "templates/index.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
+
+    get("/results", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      model.put ("template", "templates/results.vtl");
+
+      String sentence = request.queryParams("userWord");
+      Char[] charArray = sentence.toCharArray();
+      String replacedSentence = charArray.makeWordPuzzle(charArray);
+
+
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
   }
 
   public static String makeWordPuzzle(String userWord) {
     String results = "";
-
-    if (userWord.equals("a")) {
-      results += "-";
-    } else if (userWord.equals("i")) {
-      results = "-";
-    } else if (userWord.equals("b")) {
-      return results;
-    } else if (userWord.equals("word")) {
-      results = userWord;
+    for (int i=0; i < userWord.length(); i++) {
+      if (userWord.equals("a")) {
+        results += "-";
+      } else if (userWord.equals("e")) {
+        results += "-";
+      } else if (userWord.equals("i")) {
+        results += "-";
+      } else if (userWord.equals("o")) {
+        results += "-";
+      } else if (userWord.equals("u")) {
+        results += "-";
+      } else {
+        results += i;
+      }
     }
     return results;
   }
