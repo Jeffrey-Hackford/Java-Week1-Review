@@ -4,32 +4,32 @@ import static org.junit.Assert.*;
 public class wordPuzzleTest {
 
   @Test
-  public void isWordPuzzleTestA_makeWordPuzzle_StringA() {
+  public void makeWordPuzzle_WillReturnDash_StringA() {
     wordPuzzle testWordPuzzle = new wordPuzzle();
     assertEquals("-", testWordPuzzle.makeWordPuzzle("a"));
   }
   @Test
-  public void isWordPuzzleTestI_makeWordPuzzle_StringI() {
+  public void makeWordPuzzle_WillReturnDash_StringI() {
     wordPuzzle testWordPuzzle = new wordPuzzle();
     assertEquals("-", testWordPuzzle.makeWordPuzzle("i"));
   }
   @Test
-  public void isWordPuzzleTestB_makeWordPuzzle_StringB() {
+  public void makeWordPuzzle_willReturnB_StringB() {
     wordPuzzle testWordPuzzle = new wordPuzzle();
     assertEquals("b", testWordPuzzle.makeWordPuzzle("b"));
   }
   @Test
-  public void isWordPuzzleTestSpace_makeWordPuzzle_StringSpace() {
+  public void makeWordPuzzle_willReturnB_StringSpace_StringSpace() {
     wordPuzzle testWordPuzzle = new wordPuzzle();
     assertEquals(" ", testWordPuzzle.makeWordPuzzle(" "));
   }
   @Test
-  public void isWordPuzzleTestB_makeWordPuzzle_StringLowerCaseM() {
+  public void makeWordPuzzle_willReturnLowerCaseM_StringM() {
     wordPuzzle testWordPuzzle = new wordPuzzle();
     assertEquals("m", testWordPuzzle.makeWordPuzzle("M"));
   }
   @Test
-  public void isWordPuzzleTestWord_makeWordPuzzle_word() {
+  public void makeWordPuzzle_willReturnPuzzledWord_StringPuzzle() {
     wordPuzzle testWordPuzzle = new wordPuzzle();
     assertEquals("w-rd", testWordPuzzle.makeWordPuzzle("word"));
   }
