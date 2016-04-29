@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="wordPuzzleTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-04-29T02:23:36" hostname="users-MacBook-Pro.local" time="0.13">
+<testsuite name="wordPuzzleTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-04-29T04:35:26" hostname="users-MacBook-Pro.local" time="0.001">
   <properties/>
-  <testcase name="isWordPuzzleTestB_makeWordPuzzle_StringLowerCaseM" classname="wordPuzzleTest" time="0.127"/>
-  <testcase name="isWordPuzzleTestSpace_makeWordPuzzle_StringSpace" classname="wordPuzzleTest" time="0.0"/>
-  <testcase name="isWordPuzzleTestI_makeWordPuzzle_StringI" classname="wordPuzzleTest" time="0.0"/>
-  <testcase name="isWordPuzzleTestB_makeWordPuzzle_StringB" classname="wordPuzzleTest" time="0.0"/>
-  <testcase name="isWordPuzzleTestA_makeWordPuzzle_StringA" classname="wordPuzzleTest" time="0.0"/>
-  <testcase name="isWordPuzzleTestWord_makeWordPuzzle_word" classname="wordPuzzleTest" time="0.001"/>
+  <testcase name="makeWordPuzzle_willReturnB_StringB" classname="wordPuzzleTest" time="0.0"/>
+  <testcase name="makeWordPuzzle_willReturnLowerCaseM_StringM" classname="wordPuzzleTest" time="0.0"/>
+  <testcase name="makeWordPuzzle_willReturnB_StringSpace_StringSpace" classname="wordPuzzleTest" time="0.0"/>
+  <testcase name="makeWordPuzzle_WillReturnDash_StringA" classname="wordPuzzleTest" time="0.0"/>
+  <testcase name="makeWordPuzzle_WillReturnDash_StringI" classname="wordPuzzleTest" time="0.0"/>
+  <testcase name="makeWordPuzzle_willReturnPuzzledWord_StringPuzzle" classname="wordPuzzleTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
