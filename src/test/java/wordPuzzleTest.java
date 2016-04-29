@@ -26,7 +26,7 @@ public class wordPuzzleTest {
   @Test
   public void isWordPuzzleTestB_makeWordPuzzle_StringLowerCaseM() {
     wordPuzzle testWordPuzzle = new wordPuzzle();
-    assertEquals("M", testWordPuzzle.makeWordPuzzle("m"));
+    assertEquals("m", testWordPuzzle.makeWordPuzzle("M"));
   }
   @Test
   public void isWordPuzzleTestWord_makeWordPuzzle_word() {
